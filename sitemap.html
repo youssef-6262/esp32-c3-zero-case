@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Map</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        nav {
+            background-color: #2c3e50;
+            text-align: center;
+            padding: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 12px;
+            font-weight: bold;
+            font-size: 15px;
+            display: inline-block;
+        }
+
+        nav a:hover {
+            color: #4fc3f7;
+        }
+
+        .logo-bar {
+            text-align: center;
+            padding: 15px 0;
+            background-color: white;
+        }
+
+        .logo-bar a {
+            display: inline-block;
+        }
+
+        .logo-bar img {
+            width: 70px;
+            height: 70px;
+            object-fit: contain;
+            border-radius: 10px;
+            border: 1px solid #ddd;
+            background-color: #f8f9fa;
+            padding: 5px;
+            transition: 0.3s;
+        }
+
+        .logo-bar img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 8px rgba(0,0,0,0.15);
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #1f3a5f, #2c3e50);
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .hero h1 {
+            font-size: 34px;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 18px;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        .card {
+            background-color: white;
+            padding: 35px;
+            border-radius: 12px;
+            margin-bottom: 25px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.08);
+        }
+
+        h2 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #4fc3f7;
+            padding-bottom: 8px;
+        }
+
+        .diagram {
+            text-align: center;
+            margin-top: 25px;
+        }
+
+        .home-box {
+            display: inline-block;
+            background-color: #2c3e50;
+            color: white;
+            padding: 14px 28px;
+            border-radius: 10px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .arrow-row {
+            display: flex;
+            justify-content: center;
+            gap: 90px;
+            font-size: 28px;
+            color: #666;
+            margin-bottom: 10px;
+            flex-wrap: nowrap;
+        }
+
+        .page-row {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+        }
+
+        .page-box {
+            min-width: 180px;
+            padding: 14px 20px;
+            border-radius: 10px;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .main-page {
+            background-color: #3498db;
+        }
+
+        .extra-page {
+            background-color: #8e44ad;
+        }
+
+        .note {
+            margin-top: 25px;
+            background-color: #f8f9fa;
+            border-left: 5px solid #4fc3f7;
+            padding: 18px;
+            border-radius: 8px;
+            color: #555;
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+
+        .footer-bottom {
+            font-size: 13px;
+            color: #999;
+        }
+
+        @media (max-width: 768px) {
+            nav a {
+                display: inline-block;
+                margin: 8px 10px;
+            }
+
+            .arrow-row {
+                gap: 30px;
+                font-size: 22px;
+            }
+
+            .page-box {
+                min-width: 140px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="prototype1.html">Prototype 1</a>
+        <a href="prototype2.html">Prototype 2</a>
+        <a href="final.html">Final Design</a>
+        <a href="sitemap.html">Site Map</a>
+        <a href="support.html">Support</a>
+        <a href="about.html">About</a>
+    </nav>
+
+    <div class="logo-bar">
+        <a href="index.html">
+            <img src="images/board.jpg" alt="Home Logo">
+        </a>
+    </div>
+
+    <div class="hero">
+        <h1>Site Map</h1>
+        <p>This page shows how the website pages are connected</p>
+    </div>
+
+    <div class="container">
+        <div class="card">
+            <h2>Website Structure</h2>
+
+            <div class="diagram">
+                <div class="home-box">HOME</div>
+
+                <div class="arrow-row">
+                    <div>↙↔</div>
+                    <div>↕↔</div>
+                    <div>↘↔</div>
+                </div>
+
+                <div class="page-row">
+                    <div class="page-box main-page">PROTOTYPE 1</div>
+                    <div class="page-box main-page">PROTOTYPE 2</div>
+                    <div class="page-box main-page">FINAL DESIGN</div>
+                </div>
+
+                <div class="arrow-row">
+                    <div>↙↔</div>
+                    <div>↕↔</div>
+                    <div>↘↔</div>
+                </div>
+
+                <div class="page-row">
+                    <div class="page-box extra-page">SITE MAP</div>
+                    <div class="page-box extra-page">SUPPORT</div>
+                    <div class="page-box extra-page">ABOUT</div>
+                </div>
+            </div>
+
+            <div class="note">
+                <p>
+                    All pages in this website are connected through the navigation bar.
+                    This allows users to move easily between Home, Prototype 1, Prototype 2,
+                    Final Design, Site Map, Support, and About pages.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-bottom">
+            <p>ESP32-C3 Zero Protective Case Project</p>
+        </div>
+    </footer>
+
+</body>
+</html>

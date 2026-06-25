@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        nav {
+            background-color: #2c3e50;
+            text-align: center;
+            padding: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 12px;
+            font-weight: bold;
+            font-size: 15px;
+            display: inline-block;
+        }
+
+        nav a:hover {
+            color: #4fc3f7;
+        }
+
+        .logo-bar {
+            text-align: center;
+            padding: 15px 0;
+            background-color: white;
+        }
+
+        .logo-bar a {
+            display: inline-block;
+        }
+
+        .logo-bar img {
+            width: 70px;
+            height: 70px;
+            object-fit: contain;
+            border-radius: 10px;
+            border: 1px solid #ddd;
+            background-color: #f8f9fa;
+            padding: 5px;
+            transition: 0.3s;
+        }
+
+        .logo-bar img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 8px rgba(0,0,0,0.15);
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #6c5ce7, #8e44ad);
+            color: white;
+            text-align: center;
+            padding: 55px 20px;
+        }
+
+        .hero h1 {
+            font-size: 34px;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 18px;
+        }
+
+        .container {
+            max-width: 950px;
+            margin: 35px auto;
+            padding: 0 20px;
+        }
+
+        .card {
+            background-color: white;
+            padding: 35px;
+            border-radius: 12px;
+            margin-bottom: 25px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.08);
+        }
+
+        h2 {
+            color: #2c3e50;
+            margin-bottom: 18px;
+            border-bottom: 2px solid #8e44ad;
+            padding-bottom: 8px;
+        }
+
+        .support-grid {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .support-box {
+            flex: 1;
+            min-width: 280px;
+            max-width: 400px;
+            background-color: #f8f9fa;
+            border: 1px solid #ddd;
+            border-radius: 12px;
+            padding: 25px;
+            text-align: center;
+        }
+
+        .support-box h3 {
+            color: #2c3e50;
+            margin-bottom: 12px;
+        }
+
+        .support-box p {
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 14px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn-rate {
+            background-color: #3498db;
+        }
+
+        .btn-rate:hover {
+            background-color: #2980b9;
+        }
+
+        .feedback-form {
+            margin-top: 10px;
+        }
+
+        .form-group {
+            margin-bottom: 18px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 6px;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 15px;
+            font-family: Arial, sans-serif;
+        }
+
+        .form-group textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+
+        .form-btn {
+            background-color: #8e44ad;
+            color: white;
+            border: none;
+            padding: 14px 24px;
+            border-radius: 8px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .form-btn:hover {
+            background-color: #732d91;
+        }
+
+        .note {
+            margin-top: 15px;
+            font-size: 14px;
+            color: #777;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        .footer-bottom {
+            font-size: 13px;
+            color: #999;
+        }
+
+        @media (max-width: 768px) {
+            nav a {
+                display: inline-block;
+                margin: 8px 10px;
+            }
+
+            .support-grid {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="prototype1.html">Prototype 1</a>
+        <a href="prototype2.html">Prototype 2</a>
+        <a href="final.html">Final Design</a>
+        <a href="sitemap.html">Site Map</a>
+        <a href="support.html">Support</a>
+        <a href="about.html">About</a>
+    </nav>
+
+    <div class="logo-bar">
+        <a href="index.html">
+            <img src="images/board.jpg" alt="Home Logo">
+        </a>
+    </div>
+
+    <div class="hero">
+        <h1>Support and Feedback</h1>
+        <p>Use this page to rate the website or leave quick feedback</p>
+    </div>
+
+    <div class="container">
+
+        <div class="card">
+            <h2>Website Rating</h2>
+
+            <div class="support-grid">
+                <div class="support-box">
+                    <h3>Rate This Website</h3>
+                    <p>
+                        If you would like to rate this website, use the rating form.
+                        The rating form uses stars only.
+                    </p>
+                    <a href="https://forms.cloud.microsoft/r/dxkUZR2N9f" target="_blank" class="btn btn-rate">
+                        Open Rating Form
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Quick Feedback Form</h2>
+
+            <form class="feedback-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email">
+                </div>
+
+                <div class="form-group">
+                    <label for="type">Feedback Type</label>
+                    <select id="type" name="type">
+                        <option>General Feedback</option>
+                        <option>Website Problem</option>
+                        <option>Design Suggestion</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Write your message here"></textarea>
+                </div>
+
+                <button type="button" class="form-btn">Submit</button>
+            </form>
+
+            <p class="note">
+                This is a simple on-site feedback form for website demonstration purposes.
+            </p>
+        </div>
+
+    </div>
+
+    <footer>
+        <div class="footer-bottom">
+            <p>ESP32-C3 Zero Protective Case Project</p>
+        </div>
+    </footer>
+
+</body>
+</html>

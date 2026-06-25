@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        nav {
+            background-color: #2c3e50;
+            text-align: center;
+            padding: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 12px;
+            font-weight: bold;
+            font-size: 15px;
+            display: inline-block;
+        }
+
+        nav a:hover {
+            color: #4fc3f7;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #34495e, #2c3e50);
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .hero h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .card {
+            background-color: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.08);
+            margin-bottom: 25px;
+            text-align: center;
+        }
+
+        h2 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+        .logo-bar {
+            text-align: center;
+            padding: 15px 0;
+            background-color: white;
+        }
+
+        .logo-bar a {
+            display: inline-block;
+        }
+
+        .logo-bar img {
+            width: 70px;
+            height: 70px;
+            object-fit: contain;
+            border-radius: 10px;
+            border: 1px solid #ddd;
+            background-color: #f8f9fa;
+            padding: 5px;
+            transition: 0.3s;
+        }
+
+        .logo-bar img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 8px rgba(0,0,0,0.15);
+        }
+
+        .info-box {
+            background-color: #f8f9fa;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            max-width: 500px;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        .info-row {
+            margin-bottom: 15px;
+            font-size: 16px;
+        }
+
+        .info-row strong {
+            color: #2c3e50;
+            display: inline-block;
+            width: 70px;
+        }
+
+        
+        .contact-text {
+            color: #3498db;
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+
+        .footer-bottom {
+            font-size: 13px;
+            color: #999;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="prototype1.html">Prototype 1</a>
+        <a href="prototype2.html">Prototype 2</a>
+        <a href="final.html">Final Design</a>
+        <a href="sitemap.html">Site Map</a>
+        <a href="support.html">Support</a>
+        <a href="about.html">About</a>
+    </nav>
+        <div class="logo-bar">
+            <a href="index.html">
+                <img src="images/board.jpg" alt="Home Logo">
+            </a>
+        </div>
+
+    <div class="hero">
+        <h1>About the Author</h1>
+    </div>
+
+    <div class="container">
+
+        <div class="card">
+            <h2>Project Information</h2>
+            
+            <div class="info-box">
+                <div class="info-row">
+                    <strong>Name:</strong> 
+                    YOUR NAME HERE
+                </div>
+
+                <div class="info-row">
+                    <strong>Email:</strong> 
+                    <span class="contact-text">200023783@student.kangan.edu.au</span>
+                </div>
+
+                <div class="info-row">
+                    <strong>Phone:</strong> 
+                    <span class="contact-text">0468712186</span>
+                </div>
+
+                <div class="info-row">
+                    <strong>Role:</strong> 
+                    Student designer (Final design modelling and documentation)
+                </div>
+            </div>
+
+        </div>
+
+        <div class="card">
+            <h2>Project Notes</h2>
+            <p>
+                This website is a simple project portfolio showing the design journey of the ESP32-C3 Zero protective case,
+                including Prototype 1, Prototype 2, and the Final Design.
+            </p>
+        </div>
+
+    </div>
+
+    <footer>
+        <div class="footer-bottom">
+            <p>ESP32-C3 Zero Protective Case Project</p>
+        </div>
+    </footer>
+
+</body>
+</html>

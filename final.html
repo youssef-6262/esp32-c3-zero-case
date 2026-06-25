@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Design</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        nav {
+            background-color: #2c3e50;
+            text-align: center;
+            padding: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 12px;
+            font-weight: bold;
+            font-size: 15px;
+            display: inline-block;
+        }
+
+        nav a:hover {
+            color: #4fc3f7;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #27ae60, #2ecc71);
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .hero h1 {
+            font-size: 34px;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 18px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        .card {
+            background-color: white;
+            padding: 30px;
+            border-radius: 12px;
+            margin-bottom: 25px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.08);
+        }
+
+        h2 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #27ae60;
+            padding-bottom: 8px;
+        }
+
+        h3 {
+            margin-bottom: 10px;
+            color: #2c3e50;
+        }
+
+        .image-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .image-box {
+            flex: 1;
+            min-width: 250px;
+            background-color: #f8f9fa;
+            border: 2px dashed #bbb;
+            border-radius: 10px;
+            padding: 50px 20px;
+            text-align: center;
+            color: #888;
+            font-size: 16px;
+        }
+
+        .final-improvements {
+            background-color: #eafaf1;
+            border-left: 5px solid #27ae60;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .final-improvements ul {
+            padding-left: 20px;
+        }
+
+        .final-improvements li {
+            margin-bottom: 10px;
+        }
+
+        .form-preview {
+            background-color: #f9fbfc;
+            border: 1px solid #d6e2ea;
+            border-radius: 12px;
+            padding: 25px;
+        }
+
+        .form-item {
+            margin-bottom: 18px;
+        }
+
+        .form-label {
+            font-weight: bold;
+            margin-bottom: 6px;
+            display: block;
+            color: #2c3e50;
+        }
+
+        .fake-input, .fake-textarea {
+            width: 100%;
+            background-color: #ffffff;
+            border: 1px solid #cfd8dc;
+            border-radius: 8px;
+            padding: 12px;
+            color: #555;
+        }
+
+        .fake-textarea {
+            min-height: 90px;
+        }
+
+        .radio-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 8px;
+        }
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        .comparison-table th {
+            background-color: #27ae60;
+            color: white;
+            padding: 14px;
+            text-align: left;
+            font-size: 15px;
+        }
+
+        .comparison-table td {
+            padding: 14px;
+            border: 1px solid #ddd;
+            vertical-align: top;
+            background-color: #fff;
+        }
+
+        .comparison-table tr:nth-child(even) td {
+            background-color: #f9f9f9;
+        }
+
+        .radio-option {
+            background-color: #ffffff;
+            border: 1px solid #cfd8dc;
+            border-radius: 20px;
+            padding: 8px 14px;
+            font-size: 14px;
+            color: #444;
+        }
+
+        .radio-option.selected-yes {
+            background-color: #27ae60;
+            color: white;
+            border-color: #2ecc71;
+            font-weight: bold;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+
+        table th {
+            background-color: #27ae60;
+            color: white;
+            padding: 14px;
+            text-align: left;
+            font-size: 15px;
+        }
+
+        table td {
+            padding: 14px;
+            border: 1px solid #e0e0e0;
+            vertical-align: top;
+            background-color: #fff;
+        }
+
+        table tr:nth-child(even) td {
+            background-color: #fafafa;
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+
+        .footer-bottom {
+            font-size: 13px;
+            color: #999;
+        }
+
+        @media (max-width: 768px) {
+            nav a {
+                display: inline-block;
+                margin: 8px 10px;
+            }
+
+            .radio-group {
+                flex-direction: column;
+            }
+
+            table {
+                font-size: 14px;
+            }
+        }
+        .image-row-top {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        .logo-bar {
+            text-align: center;
+            padding: 15px 0;
+            background-color: white;
+        }
+
+        .logo-bar a {
+            display: inline-block;
+        }
+
+        .logo-bar img {
+            width: 70px;
+            height: 70px;
+            object-fit: contain;
+            border-radius: 10px;
+            border: 1px solid #ddd;
+            background-color: #f8f9fa;
+            padding: 5px;
+            transition: 0.3s;
+        }
+
+        .logo-bar img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 8px rgba(0,0,0,0.15);
+        }
+
+        .image-row-top .image-link {
+            flex: 1;
+            display: block;
+        }
+
+        .image-row-top .image-link img {
+            width: 100%;
+            height: 220px;
+            object-fit: contain;
+            border-radius: 10px;
+            border: 1px solid #ddd;
+            background-color: #f8f9fa;
+        }
+
+        .image-row-bottom {
+            text-align: center;
+        }
+
+        .image-link-center {
+            display: inline-block;
+            width: 50%;
+        }
+
+        .image-link-center img {
+            width: 100%;
+            height: 220px;
+            object-fit: contain;
+            border-radius: 10px;
+            border: 1px solid #ddd;
+            background-color: #f8f9fa;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="prototype1.html">Prototype 1</a>
+        <a href="prototype2.html">Prototype 2</a>
+        <a href="final.html">Final Design</a>
+        <a href="sitemap.html">Site Map</a>
+        <a href="support.html">Support</a>
+        <a href="about.html">About</a>
+    </nav>
+        <div class="logo-bar">
+            <a href="index.html">
+                <img src="images/board.jpg" alt="Home Logo">
+            </a>
+        </div>
+
+    <div class="hero">
+        <h1>Final Design</h1>
+        <p>The completed and improved protective case for the ESP32-C3 Zero</p>
+    </div>
+
+    <div class="container">
+
+        <div class="card">
+            <h2>Final Design Overview</h2>
+            <p>
+                The final version of the case includes all the improvements made after testing Prototype 1 and Prototype 2.
+                This design has rounded corners, a secure L-shaped sliding lock, wireless-signal shaped vents, and the correct
+                case height to protect the pins. The lid was also adjusted to make the buttons easier to press.
+            </p>
+        </div>
+
+        <div class="card">
+            <h2>Final Design Images</h2>
+           <div class="image-row-top">
+                <a href="images/final-box.jpg" target="_blank" class="image-link">
+                  <img src="images/final-box.jpg" alt="Final Box">
+                </a>
+
+                <a href="images/final-lid.jpg" target="_blank" class="image-link">
+                 <img src="images/final-lid.jpg" alt="Final Lid">
+                </a>
+            </div>
+
+            <div class="image-row-bottom">
+                <a href="images/final-print.jpg" target="_blank" class="image-link-center">
+                  <img src="images/final-print.jpg" alt="Final Printed Case">
+                </a>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Final Improvements Made</h2>
+            <div class="final-improvements">
+                <ul>
+                    <li>The height of the box was increased to fully protect the bottom pins.</li>
+                    <li>The lid thickness was reduced in the button area so the buttons are easier to press.</li>
+                    <li>The L-shaped locking system was kept because it worked well and held the lid securely.</li>
+                    <li>The wireless-signal shaped vents were kept to provide airflow and cooling.</li>
+                    <li>The printer bed was cleaned and dried properly so the final print could stick and print successfully.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Feedback Form</h2>
+            <div class="form-preview">
+
+                <div class="form-item">
+                    <label class="form-label">Reviewer</label>
+                    <div class="fake-input">Teacher / Final Product Review</div>
+                </div>
+
+                <div class="form-item">
+                    <label class="form-label">Does the board fit correctly inside the case?</label>
+                    <div class="radio-group">
+                        <div class="radio-option selected-yes">☑ Yes</div>
+                        <div class="radio-option">No</div>
+                    </div>
+                </div>
+
+                <div class="form-item">
+                    <label class="form-label">Are the pins protected?</label>
+                    <div class="radio-group">
+                        <div class="radio-option selected-yes">☑ Yes</div>
+                        <div class="radio-option">No</div>
+                    </div>
+                </div>
+
+                <div class="form-item">
+                    <label class="form-label">Are the buttons easy to press?</label>
+                    <div class="radio-group">
+                        <div class="radio-option selected-yes">☑ Yes</div>
+                        <div class="radio-option">No</div>
+                    </div>
+                </div>
+
+                <div class="form-item">
+                    <label class="form-label">General comments</label>
+                    <div class="fake-textarea">
+                        The final case is a strong improvement over the previous versions. The board fits well, the pins are protected,
+                        the buttons are easier to press, and the locking system works securely. Print quality is also very good.
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Feedback Table</h2>
+            <table>
+                <tr>
+                    <th>Final Check Area</th>
+                    <th>Result</th>
+                    <th>Final Outcome</th>
+                </tr>
+                <tr>
+                    <td>Board Fit</td>
+                    <td>The ESP32-C3 Zero fits correctly inside the case.</td>
+                    <td>Successful final fit.</td>
+                </tr>
+                <tr>
+                    <td>Pin Protection</td>
+                    <td>The bottom pins are fully covered and protected by the increased case height.</td>
+                    <td>Problem solved.</td>
+                </tr>
+                <tr>
+                    <td>Button Access</td>
+                    <td>The reduced lid thickness makes the buttons easier to press.</td>
+                    <td>Problem solved.</td>
+                </tr>
+                <tr>
+                    <td>Locking System</td>
+                    <td>The L-shaped sliding lock holds the lid securely in place.</td>
+                    <td>Kept in the final design.</td>
+                </tr>
+                <tr>
+                    <td>Print Quality</td>
+                    <td>The final print came out clean after cleaning and drying the printer bed.</td>
+                    <td>Successful final print.</td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+
+        <div class="card">
+         <h2>Comparison Table</h2>
+
+            <table class="comparison-table">
+                <tr>
+                    <th>Design</th>
+                    <th>Main Features</th>
+                    <th>Pros</th>
+                    <th>Cons</th>
+                    <th>Improvements Made</th>
+                </tr>
+
+                <tr>
+                    <td>Prototype 1</td>
+                    <td>Basic case shape with separate lid</td>
+                    <td>
+                        Correct overall shape<br>
+                        Good print quality<br>
+                        Strong wall thickness
+                    </td>
+                    <td>
+                        Board did not fit<br>
+                        USB opening too small<br>
+                        Bottom pin slots too narrow
+                    </td>
+                    <td>
+                        Increased internal dimensions<br>
+                        Enlarged openings<br>
+                        Planned locking system
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Prototype 2</td>
+                    <td>Improved fit with L-shaped locking system</td>
+                    <td>
+                        Board fit correctly<br>
+                        Better USB and pin access<br>
+                        Strong lid lock
+                    </td>
+                    <td>
+                        Case height too low<br>
+                        Pins stuck out from the bottom<br>
+                        Lid too thick for buttons
+                    </td>
+                    <td>
+                        Increased case height<br>
+                        Reduced lid thickness near buttons
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Final Design</td>
+                    <td>Rounded case with improved height, thinner lid, L-shaped lock and vents</td>
+                    <td>
+                        Correct fit<br>
+                        Protected pins<br>
+                        Buttons easier to press<br>
+                        Good airflow<br>
+                        High print quality
+                    </td>
+                    <td>
+                        No major issues after final improvements
+                    </td>
+                    <td>
+                        Final successful version after testing and refinement
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="card">
+            <h2>Conclusion</h2>
+            <p>
+                The final design is suitable because it fits the ESP32-C3 Zero correctly, protects the pins and components, and allows easy access to the buttons and charging port. It also includes a secure L-shaped locking system and ventilation slots for airflow and cooling. After improving the height of the case and reducing the lid thickness, the final version became stronger, easier to use, and more practical for classroom use.
+            </p>
+        </div>
+
+    <footer>
+        <div class="footer-bottom">
+            <p>ESP32-C3 Zero Protective Case Project</p>
+        </div>
+    </footer>
+
+</body>
+</html>
